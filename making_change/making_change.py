@@ -78,6 +78,12 @@ def making_change(amount, denominations, current_den=None, cache=None):
         check[denominations[i]] = coin_ways
         different_ways += coin_ways
         i -= 1
+
+    # Add in these print lines to see
+    # the cache as it grows with each recursion
+    
+    # print(cache)
+    # print()
     return different_ways
 
 
